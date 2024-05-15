@@ -1,4 +1,6 @@
-
+body{
+  padding-top: 5vw;
+}
 .header {
   background-color: black;
   color: white;
