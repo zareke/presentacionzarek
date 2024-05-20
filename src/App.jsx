@@ -44,15 +44,24 @@ function App() {
           <div className="conimgsbig">
             <div className="conimgs">
               <img className="imgfromcon" src={unity} alt="unity"></img>
+              <p>Desarrollo de videojuegos en Unity C#</p>
             </div>
-            <div className="conimgsbig">
+            <div className="conimgs">
               <img className="imgfromcon" src={csharp} alt="csharp"></img>
+              <p>C# (MVC y .NET)</p>
             </div>
-            <div className="conimgsbig">
+            <div className="conimgs">
               <img className="imgfromcon" src={js} alt="java"></img>
+              <p>Javascript (React, MVC, y NPM)</p>
             </div>
           </div>
           <Seccion className="Experiencia"></Seccion>
+          <div className="losbloques">
+            <div className="bloque">
+              <h3>Hangover</h3>
+              <p>Fullstack developer y co-fundador de la startup para lo compra y venta de prendas de ropa on-demand Hangover.</p>
+            </div>
+          </div>
           <Seccion className="Educación"></Seccion>
           <Seccion className="Certificaciones"></Seccion>
           <Seccion className="Contacto"></Seccion>
