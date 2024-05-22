@@ -109,6 +109,10 @@ background-color: rgb(0, 0, 0);
 border-radius: 10px;
 color: white;
 margin:0;
+transition: transform 0.3s ease-in-out;
+transition: color 0.3s ease-in-out;
+transition: background-color 0.3s ease-in-out;
+transition: box-shadow 0.3s ease-in-out;
 }
 .alinearBloque {
   flex-wrap: wrap;
@@ -116,4 +120,10 @@ margin:0;
   justify-content: center;
   display: flex;
   height: 10vw;
+}
+.bloque:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 8px 8px rgba(0,0,0,0.5);
+  transform: translateY(-5px);
 }
