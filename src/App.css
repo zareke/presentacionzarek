@@ -13,6 +13,7 @@ body{
   right: 0;
   left: 0;
   top: 0;
+  z-index: 5;
 
 }
 ul li{
@@ -84,4 +85,35 @@ h3{
 }
 .bloque{
   text-align: center;
+}
+
+.losbloques{
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 200px; /* Espacio entre los elementos */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 15vw;
+
+}
+.bloque{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra los elementos verticalmente dentro del contenedor */
+  align-items: center;
+  width: 20vw;
+height: 15vw;
+padding: 10px;
+background-color: rgb(0, 0, 0);
+border-radius: 10px;
+color: white;
+margin:0;
+}
+.alinearBloque {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 10vw;
 }

@@ -4,6 +4,7 @@ import Imagensita from "./imgs/chico-calavera_2.png";
 import unity from "./imgs/unity.png";
 import csharp from "./imgs/c-4.svg";
 import js from "./imgs/Unofficial_JavaScript_logo_2.svg.png";
+import Exp from "./components/CartaExperiencia.jsx"
 function App() {
   return (
     <div>
@@ -57,10 +58,9 @@ function App() {
           </div>
           <Seccion className="Experiencia"></Seccion>
           <div className="losbloques">
-            <div className="bloque">
-              <h3>Hangover</h3>
-              <p>Fullstack developer y co-fundador de la startup para lo compra y venta de prendas de ropa on-demand Hangover.</p>
-            </div>
+            <Exp className="Hangover" texto ="Fullstack developer y co-fundador de la startup para lo compra y venta de prendas de ropa on-demand Hangover."></Exp>
+            <Exp className="Profesor" texto="Actualmente trabajo como profesor de programacion en los idiomas que manejo"></Exp>
+            <Exp className="Hollow Knight" texto="Formé parte como desarrollador del famoso videojuego Hollow Knight"></Exp>
           </div>
           <Seccion className="Educación"></Seccion>
           <Seccion className="Certificaciones"></Seccion>
