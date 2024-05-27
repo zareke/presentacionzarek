@@ -1,13 +1,14 @@
 import "./App.css";
-import Seccion from "./components/Seccion";
+import Seccion from "./components/Section.jsx";
 import Imagensita from "./imgs/chico-calavera_2.png";
 import unity from "./imgs/unity.png";
 import csharp from "./imgs/c-4.svg";
 import js from "./imgs/Unofficial_JavaScript_logo_2.svg.png";
-import Exp from "./components/CartaExperiencia.jsx";
+import Exp from "./components/ExperienceCard.jsx";
 import coderhouse from "./imgs/coderhouse-aprende-haciendo.jpg";
 import hackerrank from "./imgs/HackerRank_Icon-1000px.png";
 import ContactForm from "./components/ContactForm.jsx" 
+import blob from "./imgs/blob.svg"
 function App() {
   return (
     <div>
@@ -38,12 +39,21 @@ function App() {
       </header>
       <div>
         <div className="centrador">
+          
+          <img src={blob} className="blob"></img>
+          <div className="cambiarcolor">
           <Seccion className="Sobre mí"></Seccion>
+          </div>
+          <div className="inicio">
+            
           <img id="imagensita" src={Imagensita} alt="imagensita"></img>
+          
           <p>
-            Hola, me llamo Zarek Alexis Nazar Dutka, y soy un apasionado de la
-            informatica y las ciencias
+            
+            Hola, me llamo <u>Zarek Alexis Nazar Dutka</u>, y soy un apasionado de la
+            informatica y las ciencias.<br></br><br></br><br></br><br></br>
           </p>
+          </div>
           <Seccion className="Conocimientos"></Seccion>
           <div className="conimgsbig">
             <div className="conimgs">
@@ -114,8 +124,12 @@ function App() {
       </div>
       <ContactForm></ContactForm>
       <footer className="footer">
-        <h1>ZAREK</h1>
-        <p>La imaginacion es mas importante que el conocimiento</p>
+         <div className="centrador">
+            <p>
+            <b>ZAREK</b><br></br>
+              "La imaginacion es mas importante que el conocimiento"
+            </p>
+            </div>
       </footer>
     </div>
   );

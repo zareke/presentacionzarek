@@ -7,16 +7,26 @@
   align-items: center;
   padding-left: 200px;
   padding-right: 200px;
-  position:sticky;
+  position:fixed;
   right: 0;
   left: 0;
   top: 0;
   z-index: 5;
 
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 ul li{
   display: inline;
   margin-right: 20px;
+}
+.blob{
+  position: absolute;
+  margin-bottom: 160vw;
+  z-index: -1;
+  width: 350vw;
 }
 li a{
   color: rgb(255, 255, 255);
@@ -28,16 +38,37 @@ li a{
 li a:hover {
   text-shadow: 0.001px 0 0 white;
 }
-
+.inicio{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(100%);
+  gap: 30vw;
+}
+.inicio{
+  font-size: 1.5vw;
+  
+}
+.inicio p{
+  max-width: 30vw;
+}
 h1{
   font-weight: normal;
 }
 .centrador{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   flex-wrap:wrap;
   flex-direction: column;
+  
+}
+#imagensita{
+  width: 32vw;
+}
+.cambiarcolor{
+  color:white;
+  margin-top: 100px;
 }
 #Sobre-mi,
 #Conocimientos,
@@ -166,14 +197,32 @@ tr:last-child td:last-child{
 
 
 .footer{
+  background-color: black;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1vw;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.footer{
+height: 10vw;
+font-size: 20px;
+margin-top: 5vw;
 }
 
 
 th{
   font-size: 3vw;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
